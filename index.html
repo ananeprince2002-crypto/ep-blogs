@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EP BLOGS — News, Stories & Updates</title>
+<meta name="description" content="EP BLOGS — News, stories, entertainment, sports, education, technology and more.">
+<meta name="theme-color" content="#1737e8">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#1737e8;--blue2:#0f24b5;--ink:#111827;--muted:#64748b;--line:#e7eaf0;--bg:#f6f8fc;--white:#fff;--red:#e11d2e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}
+.container{width:min(1180px,92%);margin:auto}.topbar{background:#07133d;color:#fff;font-size:13px}.topbar .container{display:flex;justify-content:space-between;gap:15px;padding:9px 0}.topbar a{color:#dce4ff}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;box-shadow:0 2px 18px #09133d0d}.head{display:flex;align-items:center;justify-content:space-between;min-height:84px;gap:25px}.brand{display:flex;align-items:center;gap:12px}.brand img{width:66px;height:66px;object-fit:cover;border-radius:14px}.brand-name{font-size:28px;font-weight:900;letter-spacing:-1.5px}.brand-name span{color:var(--blue)}.tag{display:block;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.4px;margin-top:2px}
+nav{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}nav a:hover,nav a.active{color:var(--blue)}.menu{display:none;border:0;background:none;font-size:28px}
+.search{display:flex;border:1px solid var(--line);border-radius:999px;padding:5px 7px 5px 14px;background:#fff}.search input{border:0;outline:0;width:150px}.search button{border:0;background:var(--blue);color:#fff;border-radius:50%;width:34px;height:34px;cursor:pointer}
+.breaking{background:var(--blue);color:#fff}.breaking .container{display:flex;align-items:center;min-height:43px;gap:12px;overflow:hidden}.breaking strong{background:#07133d;padding:6px 10px;border-radius:5px;font-size:11px;white-space:nowrap}.ticker{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}
+.hero{padding:30px 0}.hero-grid{display:grid;grid-template-columns:1.55fr .9fr;gap:22px}.hero-card,.side-card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 30px #09133d0a}.hero-card{min-height:430px;position:relative}.hero-img{width:100%;height:430px;object-fit:cover;background:linear-gradient(135deg,#dfe5ff,#fff)}.hero-overlay{position:absolute;inset:auto 0 0;padding:90px 28px 28px;color:#fff;background:linear-gradient(transparent,#07133de8)}.badge{display:inline-block;background:var(--blue);color:#fff;padding:6px 10px;border-radius:6px;font-size:11px;font-weight:800;text-transform:uppercase}.hero-overlay h1{font-family:"Playfair Display",serif;font-size:40px;line-height:1.05;margin:12px 0 9px;max-width:800px}.meta{font-size:12px;color:#a0aec0}.hero-overlay .meta{color:#e9edff}
+.side{display:grid;gap:22px}.side-card{display:grid;grid-template-columns:145px 1fr;min-height:204px}.side-card img{width:100%;height:100%;min-height:204px;object-fit:cover;background:#e8edff}.side-body{padding:18px}.side-body h3{margin:9px 0 10px;font-size:18px;line-height:1.25}.side-body p{font-size:12px;color:var(--muted);line-height:1.5;margin:0}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:20px 0}.section-head h2{font-family:"Playfair Display",serif;font-size:28px;margin:0}.section-head a{color:var(--blue);font-weight:800;font-size:13px}
+.content-grid{display:grid;grid-template-columns:1fr 320px;gap:26px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.2s;box-shadow:0 7px 25px #09133d08}.card:hover{transform:translateY(-3px);box-shadow:0 12px 35px #09133d15}.card img{width:100%;height:205px;object-fit:cover;background:#e8edff}.card-body{padding:16px}.card h3{font-size:18px;line-height:1.3;margin:8px 0}.card p{color:var(--muted);font-size:13px;line-height:1.55;margin:0 0 12px}
+.sidebar-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:20px}.sidebar-box h3{margin:0 0 15px;font-size:16px}.cat-list{display:grid;gap:9px}.cat-list a{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px;font-weight:700}.cat-list a:last-child{border:0}
+.ad{min-height:130px;display:grid;place-items:center;border:1px dashed #b9c2d4;border-radius:12px;color:#8a94a8;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+footer{margin-top:55px;background:#07133d;color:#dbe4ff}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:35px;padding:48px 0}.footer-logo{font-size:27px;font-weight:900;color:#fff}.footer-logo span{color:#6d82ff}.footer p{color:#aab7dd;line-height:1.6;font-size:13px}.footer h4{color:#fff;margin-top:0}.footer a{display:block;color:#b9c6e9;font-size:13px;margin:10px 0}.copyright{border-top:1px solid #26325c;padding:16px 0;font-size:12px;color:#91a0cb}
+.page{padding:35px 0}.article{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px}.article h1{font-family:"Playfair Display",serif;font-size:44px;line-height:1.08;margin:12px 0}.article .article-img{width:100%;max-height:560px;object-fit:cover;border-radius:14px;margin:20px 0}.article-content{font-family:Georgia,serif;font-size:18px;line-height:1.8;max-width:850px}.article-content p{margin:0 0 20px}
+.admin-wrap{max-width:900px;margin:auto}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px;margin-bottom:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800}.field input,.field select,.field textarea{border:1px solid #dbe1eb;border-radius:10px;padding:12px;outline:none;background:#fff}.field textarea{min-height:190px;resize:vertical}.btn{border:0;background:var(--blue);color:#fff;padding:12px 17px;border-radius:10px;font-weight:800;cursor:pointer}.btn.secondary{background:#e9edff;color:var(--blue)}.btn.danger{background:#fee2e2;color:#b91c1c}.post-admin{display:flex;justify-content:space-between;gap:15px;padding:14px 0;border-bottom:1px solid var(--line)}.post-admin:last-child{border:0}.post-admin h4{margin:0 0 5px}.post-admin small{color:var(--muted)}.login{max-width:420px;margin:60px auto}
+.empty{padding:50px;text-align:center;color:var(--muted);background:#fff;border:1px dashed #ccd4e4;border-radius:16px}.hidden{display:none!important}
+@media(max-width:900px){nav{display:none}.menu{display:block}.search{display:none}.hero-grid,.content-grid{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.hero-overlay h1{font-size:32px}}
+@media(max-width:650px){.topbar .container{font-size:11px}.head{min-height:70px}.brand img{width:52px;height:52px}.brand-name{font-size:22px}.side{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero-img{height:370px}.hero-overlay{padding:80px 18px 20px}.hero-overlay h1{font-size:28px}.side-card{grid-template-columns:125px 1fr}.side-card img{min-height:180px}.article{padding:20px}.article h1{font-size:34px}.article-content{font-size:17px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>EP BLOGS — News, Stories & Updates</span><span><a href="tel:0595514852">0595514852</a> · <a href="mailto:ananeprince2002@gmail.com">Email us</a></span></div></div>
+
+<header>
+  <div class="container head">
+    <a class="brand" href="#home" onclick="showHome()">
+      <img src="/logo.jpg" alt="EP Studio logo">
+      <div><div class="brand-name">EP <span>BLOGS</span></div><span class="tag">Your story. Your voice. Your update.</span></div>
+    </a>
+    <nav id="nav">
+      <a href="#home" class="active" onclick="showHome()">Home</a>
+      <a href="#category/Ghana News" onclick="showCategory('Ghana News')">Ghana</a>
+      <a href="#category/Entertainment" onclick="showCategory('Entertainment')">Entertainment</a>
+      <a href="#category/Sports" onclick="showCategory('Sports')">Sports</a>
+      <a href="#category/Education" onclick="showCategory('Education')">Education</a>
+      <a href="#category/Technology" onclick="showCategory('Technology')">Tech</a>
+      <a href="#about" onclick="showAbout()">About</a>
+    </nav>
+    <div class="search"><input id="searchInput" placeholder="Search news..."><button onclick="searchPosts()">⌕</button></div>
+    <button class="menu" onclick="toggleNav()">☰</button>
+  </div>
+</header>
+
+<div class="breaking"><div class="container"><strong>BREAKING</strong><div class="ticker" id="ticker">Welcome to EP BLOGS — your home for news, stories and updates.</div></div></div>
+
+<main id="app"></main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><div class="footer-logo">EP <span>BLOGS</span></div><p>A modern news and media platform for stories, updates, entertainment, sports, education and technology.</p></div>
+    <div><h4>Quick Links</h4><a href="#home" onclick="showHome()">Home</a><a href="#category/Ghana News" onclick="showCategory('Ghana News')">Ghana News</a><a href="#category/Sports" onclick="showCategory('Sports')">Sports</a><a href="#category/Entertainment" onclick="showCategory('Entertainment')">Entertainment</a></div>
+    <div><h4>Contact</h4><a href="tel:0595514852">WhatsApp / Phone: 0595514852</a><a href="mailto:ananeprince2002@gmail.com">ananeprince2002@gmail.com</a><a href="#admin" onclick="showAdmin()">Admin Dashboard</a></div>
+  </div>
+  <div class="container copyright">© <span id="year"></span> EP BLOGS. All rights reserved.</div>
+</footer>
+
+<script>
+const categories=["Ghana News","General News","Politics","Sports","Entertainment","Education","Technology","Business","Lifestyle"];
+let posts=[];
+
+const esc = s => String(s||"").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+const fmt = d => new Date(d).toLocaleDateString("en-GH",{day:"numeric",month:"short",year:"numeric"});
+const img = p => p.image || "data:image/svg+xml;charset=UTF-8,"+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500"><rect width="100%" height="100%" fill="#e8edff"/><text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="42" font-weight="700" fill="#1737e8">EP BLOGS</text></svg>`);
+
+async function loadPosts(){const r=await fetch("/api/posts");posts=await r.json(); renderRoute(); updateTicker();}
+function updateTicker(){document.getElementById("ticker").textContent=posts[0]?.title || "Welcome to EP BLOGS — your home for news, stories and updates."}
+function card(p){return `<article class="card"><a href="#post/${p.id}" onclick="showPost('${p.id}')"><img src="${img(p)}" alt="${esc(p.title)}"><div class="card-body"><span class="badge">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.excerpt || (p.content||"").slice(0,130))}</p><div class="meta">${esc(p.author)} · ${fmt(p.createdAt)}</div></div></a></article>`}
+function sideCard(p){return `<article class="side-card"><a href="#post/${p.id}" onclick="showPost('${p.id}')"><img src="${img(p)}" alt="${esc(p.title)}"></a><div class="side-body"><span class="badge">${esc(p.category)}</span><h3><a href="#post/${p.id}" onclick="showPost('${p.id}')">${esc(p.title)}</a></h3><div class="meta">${fmt(p.createdAt)}</div></div></article>`}
+
+function showHome(){
+ document.querySelectorAll("nav a").forEach(a=>a.classList.remove("active")); document.querySelector('nav a[href="#home"]')?.classList.add("active");
+ const featured=posts.find(p=>p.featured)||posts[0];
+ const rest=posts.filter(p=>!featured || p.id!==featured.id);
+ document.getElementById("app").innerHTML=`
+ <section class="hero"><div class="container">
+ ${featured?`<div class="hero-grid"><article class="hero-card"><a href="#post/${featured.id}" onclick="showPost('${featured.id}')"><img class="hero-img" src="${img(featured)}" alt="${esc(featured.title)}"><div class="hero-overlay"><span class="badge">${esc(featured.category)}</span><h1>${esc(featured.title)}</h1><div class="meta">${esc(featured.author)} · ${fmt(featured.createdAt)}</div></div></a></article>
+ <div class="side">${rest.slice(0,2).map(sideCard).join("")||`<div class="empty">Your latest stories will appear here.</div>`}</div></div>`:`<div class="empty"><h2>Welcome to EP BLOGS</h2><p>Your first news story will appear here after you publish it from the Admin Dashboard.</p><button class="btn" onclick="showAdmin()">Open Admin Dashboard</button></div>`}
+ </div></section>
+ <section><div class="container"><div class="section-head"><h2>Latest Stories</h2><a href="#admin" onclick="showAdmin()">Publish a story →</a></div>
+ <div class="content-grid"><div class="cards">${rest.slice(0,8).map(card).join("") || `<div class="empty">No stories published yet.</div>`}</div>
+ <aside><div class="sidebar-box"><h3>Browse Categories</h3><div class="cat-list">${categories.map(c=>`<a href="#category/${c}" onclick="showCategory('${c}')">${c}<span>›</span></a>`).join("")}</div></div><div class="sidebar-box"><div class="ad">Advertisement space</div></div></aside></div></div></section>`;
+}
+
+function showCategory(cat){
+ const list=posts.filter(p=>p.category.toLowerCase()===cat.toLowerCase());
+ document.getElementById("app").innerHTML=`<section class="page"><div class="container"><div class="section-head"><h2>${esc(cat)}</h2><a href="#home" onclick="showHome()">← Home</a></div>${list.length?`<div class="cards">${list.map(card).join("")}</div>`:`<div class="empty"><h3>No stories in ${esc(cat)} yet.</h3><p>Published stories in this category will appear here.</p></div>`}</div></section>`;
+}
+
+function showPost(id){
+ const p=posts.find(x=>x.id===id); if(!p){showHome();return}
+ document.getElementById("app").innerHTML=`<section class="page"><div class="container"><article class="article"><span class="badge">${esc(p.category)}</span><h1>${esc(p.title)}</h1><div class="meta">By ${esc(p.author)} · ${fmt(p.createdAt)}</div>${p.image?`<img class="article-img" src="${img(p)}" alt="${esc(p.title)}">`:''}<div class="article-content">${esc(p.content).split(/\n+/).filter(Boolean).map(x=>`<p>${x}</p>`).join("")}</div></article></div></section>`;
+}
+
+function searchPosts(){
+ const q=document.getElementById("searchInput").value.trim().toLowerCase(); if(!q){showHome();return}
+ const list=posts.filter(p=>(p.title+" "+p.category+" "+p.excerpt+" "+p.content).toLowerCase().includes(q));
+ document.getElementById("app").innerHTML=`<section class="page"><div class="container"><div class="section-head"><h2>Search results for “${esc(q)}”</h2></div>${list.length?`<div class="cards">${list.map(card).join("")}</div>`:`<div class="empty">No stories matched your search.</div>`}</div></section>`;
+}
+document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")searchPosts()});
+
+function showAbout(){
+ document.getElementById("app").innerHTML=`<section class="page"><div class="container"><div class="article"><span class="badge">About EP BLOGS</span><h1>Stories that keep you informed.</h1><div class="article-content"><p>EP BLOGS is a modern news and media platform created to publish timely stories, images and updates across Ghana and beyond.</p><p>Our coverage can include general news, education, sports, entertainment, technology, business and lifestyle.</p><p><strong>Contact:</strong> 0595514852 · ananeprince2002@gmail.com</p></div></div></div></section>`;
+}
+function toggleNav(){document.getElementById("nav").style.display=document.getElementById("nav").style.display==="flex"?"none":"flex"}
+async function showAdmin(){
+ document.getElementById("app").innerHTML=`<section class="page"><div class="container admin-wrap" id="adminArea"><div class="empty">Checking admin access…</div></div></section>`;
+ const me=await fetch("/api/me").then(r=>r.json());
+ if(me.admin) renderAdmin(); else renderLogin();
+}
+function renderLogin(){document.getElementById("adminArea").innerHTML=`<div class="panel login"><h2>EP BLOGS Admin</h2><p class="meta">Sign in to publish and manage news.</p><div class="field"><label>ADMIN PASSWORD</label><input type="password" id="adminPass" placeholder="Enter password"></div><br><button class="btn" onclick="login()">Sign in</button><p id="loginMsg" class="meta"></p></div>`}
+async function login(){const password=document.getElementById("adminPass").value;const r=await fetch("/api/login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password})});if(r.ok)renderAdmin();else document.getElementById("loginMsg").textContent="Incorrect password."}
+function renderAdmin(){
+ document.getElementById("adminArea").innerHTML=`<div class="panel"><div class="section-head"><h2>Publish News</h2><button class="btn secondary" onclick="logout()">Log out</button></div>
+ <form id="postForm" class="form-grid" enctype="multipart/form-data">
+ <div class="field full"><label>HEADLINE *</label><input name="title" required placeholder="Write a strong news headline"></div>
+ <div class="field"><label>CATEGORY *</label><select name="category" required>${categories.map(c=>`<option>${c}</option>`).join("")}</select></div>
+ <div class="field"><label>AUTHOR</label><input name="author" value="EP BLOGS"></div>
+ <div class="field full"><label>SHORT EXCERPT</label><textarea name="excerpt" style="min-height:90px" placeholder="A short summary for the homepage..."></textarea></div>
+ <div class="field full"><label>FULL STORY *</label><textarea name="content" required placeholder="Write the complete story here. Separate paragraphs with a blank line."></textarea></div>
+ <div class="field"><label>FEATURED IMAGE</label><input type="file" name="image" accept="image/*"></div>
+ <div class="field"><label>FEATURED STORY?</label><select name="featured"><option value="false">No</option><option value="true">Yes</option></select></div>
+ <div class="field full"><button class="btn" type="submit">Publish Story</button></div>
+ </form><p id="postMsg" class="meta"></p></div>
+ <div class="panel"><h2>Published Stories</h2><div id="adminPosts">${posts.map(p=>`<div class="post-admin"><div><h4>${esc(p.title)}</h4><small>${esc(p.category)} · ${fmt(p.createdAt)}</small></div><button class="btn danger" onclick="deletePost('${p.id}')">Delete</button></div>`).join("") || '<p class="meta">No stories yet.</p>'}</div></div>`;
+ document.getElementById("postForm").onsubmit=publishPost;
+}
+async function publishPost(e){e.preventDefault();const r=await fetch("/api/posts",{method:"POST",body:new FormData(e.target)});const data=await r.json();if(r.ok){document.getElementById("postMsg").textContent="Published successfully.";e.target.reset();await if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
+loadPosts();renderAdmin()}else document.getElementById("postMsg").textContent=data.error||"Could not publish."}
+async function deletePost(id){if(!confirm("Delete this story?"))return;const r=await fetch("/api/posts/"+id,{method:"DELETE"});if(r.ok){await if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
+loadPosts();showAdmin()}}
+async function logout(){await fetch("/api/logout",{method:"POST"});showAdmin()}
+
+function renderRoute(){
+ const h=location.hash;
+ if(h.startsWith("#post/"))showPost(h.slice(6));
+ else if(h.startsWith("#category/"))showCategory(decodeURIComponent(h.slice(10)));
+ else if(h==="#about")showAbout();
+ else if(h==="#admin")showAdmin();
+ else showHome();
+}
+window.addEventListener("hashchange",renderRoute);
+document.getElementById("year").textContent=new Date().getFullYear();
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
+loadPosts();
+</script>
+</body>
+</html>

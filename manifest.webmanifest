@@ -1,0 +1,17 @@
+{
+  "name": "EP BLOGS",
+  "short_name": "EP BLOGS",
+  "description": "News, stories, images and updates from EP BLOGS.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1737e8",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
