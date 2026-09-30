@@ -1,0 +1,13 @@
+[
+  {
+    "id": "welcome-ep-blogs",
+    "title": "Welcome to EP BLOGS",
+    "category": "General News",
+    "excerpt": "Your new home for news, stories, images and updates.",
+    "content": "Welcome to EP BLOGS.\n\nThis is your new digital newsroom. Use the Admin Dashboard to publish your first story, add a featured image, choose a category and share your latest updates with readers.",
+    "author": "EP BLOGS",
+    "image": "",
+    "featured": true,
+    "createdAt": "2026-09-30T12:00:00.000Z"
+  }
+]

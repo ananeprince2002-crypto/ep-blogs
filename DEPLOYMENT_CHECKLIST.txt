@@ -1,0 +1,23 @@
+EP BLOGS — ONLINE DEPLOYMENT CHECKLIST
+
+1. Upload this project to GitHub.
+2. Create a Render Blueprint from the repository.
+3. Set a strong ADMIN_PASSWORD.
+4. Deploy.
+5. Test:
+   - Home page
+   - Categories
+   - Search
+   - Admin login
+   - News publishing
+   - Image upload
+   - Delete
+   - Mobile layout
+6. Add a custom domain if desired.
+7. Keep backups of your news/images.
+
+Recommended production architecture for a larger newsroom:
+- Database: PostgreSQL
+- Image storage: cloud object storage/CDN
+- Backend: Node/Express
+- Frontend: responsive PWA
