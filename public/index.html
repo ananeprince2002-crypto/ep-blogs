@@ -139,9 +139,9 @@ function renderAdmin(){
  <div class="panel"><h2>Published Stories</h2><div id="adminPosts">${posts.map(p=>`<div class="post-admin"><div><h4>${esc(p.title)}</h4><small>${esc(p.category)} · ${fmt(p.createdAt)}</small></div><button class="btn danger" onclick="deletePost('${p.id}')">Delete</button></div>`).join("") || '<p class="meta">No stories yet.</p>'}</div></div>`;
  document.getElementById("postForm").onsubmit=publishPost;
 }
-async function publishPost(e){e.preventDefault();const r=await fetch("/api/posts",{method:"POST",body:new FormData(e.target)});const data=await r.json();if(r.ok){document.getElementById("postMsg").textContent="Published successfully.";e.target.reset();await if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
+async function publishPost(e){e.preventDefault();const r=await fetch("/api/posts",{method:"POST",body:new FormData(e.target)});const data=await r.json();if(r.ok){document.getElementById("postMsg").textContent="Published successfully.";e.target.reset();if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
 loadPosts();renderAdmin()}else document.getElementById("postMsg").textContent=data.error||"Could not publish."}
-async function deletePost(id){if(!confirm("Delete this story?"))return;const r=await fetch("/api/posts/"+id,{method:"DELETE"});if(r.ok){await if ("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
+async function deletePost(id){if(!confirm("Delete this story?"))return;const r=await fetch("/api/posts/"+id,{method:"DELETE"});if(r.ok){ if("serviceWorker" in navigator) navigator.serviceWorker.register("/sw.js").catch(()=>{});
 loadPosts();showAdmin()}}
 async function logout(){await fetch("/api/logout",{method:"POST"});showAdmin()}
 
